@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }
+      .section_div {
+        height: 10vh;
+        border-bottom-style: none;
+        border-bottom-color: transparent;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+      }
+      .nav_bar_parent_div {
+        display: flex;
+        justify-content: space-around;
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 95%;
+      }
+      .nav_bar_buttons {
+        display: flex;
+        gap: 30px;
+      }
+      .shapely_demo {
+        font-size: 35px;
+      }
+      #search_icon {
+        color: purple;
+      }
+
+      /* nav bar section css ends here */
+      /* hero section ends here */
+      .hero_section_div {
+        background-image: url(BG.jpg);
+        background-position: center;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        background-attachment: fixed;
+      }
+      .hero_section_div h1 {
+        font-size: 70px;
+        font-weight: 100;
+        width: 50%;
+        text-align: center;
+      }
+      .hero_section_div p {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .hero_section_read-more_button {
+        width: 200px;
+        height: 50px;
+        border-style: solid;
+        border-color: transparent;
+        background-color: blueviolet;
+        color: white;
+      }
+      .hero_section_download-now_button {
+        width: 200px;
+        height: 50px;
+        border-style: solid;
+        border-color: white;
+        background-color: transparent;
+        color: white;
+      }
+      .hero_section_buttons_div {
+        display: flex;
+        gap: 10px;
+      }
+      /* hero section css ends here */
+      /* SEO friendly section */
+      .SEO_section_div {
+        height: 60vh;
+        background-color: white;
+      }
+      .SEO_section_container1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .SEO_section_parent_div {
+        display: flex;
+        align-items: center;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 130px;
+      }
+      .SEO_section_container2 h3 {
+        font-size: xx-large;
+        color: rgb(32, 32, 32);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .SEO_section_container1 {
+        width: 50%;
+      }
+      .SEO_section_container2 {
+        width: 50%;
+      }
+      .SEO_section_container2 p {
+        color: grey;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .SEO_section_container2 button {
+        height: 50px;
+        width: 200px;
+        background-color: blueviolet;
+        border-style: solid;
+        border-color: transparent;
+        color: white;
+      }
+      /* SEO friendly ends here */
+      /* portfolio section starts here */
+      .portfolio_section_div {
+        height: 60vh;
+        background-color: #ecebeb;
+      }
+      .portfolio_section_parent_div {
+        width: 95%;
+        display: flex;
+        align-content: center;
+        gap: 130px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .portfolio_section_container1 {
+        width: 50%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: grey;
+        align-content: center;
+        align-items: center;
+      }
+      .portfolio_section_container2 {
+        width: 50%;
+      }
+      .portfolio_section_container2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .portfolio_section_container1 h3 {
+        color: rgb(27, 27, 27);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: xx-large;
+      }
+      .portfolio_section_container1 p {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .portfolio_section_container1 button {
+        width: 200px;
+        height: 50px;
+        background-color: blueviolet;
+        border-style: solid;
+        border-color: transparent;
+        color: white;
+      }
+      /* portfolio section ends here */
+      /* small parallax section starts here */
+      .parallax_section_div {
+        background-image: url(BG2.jpg);
+        background-repeat: no-repeat;
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        background-attachment: fixed;
+      }
+      .parallax_section_parent_div {
+        width: 95%;
+        justify-content: center;
+        text-align: center;
+      }
+      .parallax_section_parent_div h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        font-weight: 100;
+      }
+      .parallax_section_parent_div p {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+      .parallax_section_parent_div button {
+        width: 200px;
+        height: 50px;
+        background-color: blueviolet;
+        border-style: solid;
+        border-color: transparent;
+        color: white;
+      }
+      /* small parallax section ends here */
+      /* limitless option starts here */
+      .limitless_option_section_div {
+        height: 917.5px;
+        background-color: #ecebeb;
+      }
+      .limitless_option_parent_div {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        text-align: center;
+        padding-top: 70px;
+        height: 900.5px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .limitless_option_parent_div h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: xx-large;
+        font-weight: lighter;
+        color: rgb(26, 26, 26);
+      }
+      .limitless_option_img_div {
+        width: 85%;
+        height: 100vh;
+      }
+      .limitless_option_parent_div img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        margin-top: 25px;
+      }
+      .limitless_option_parent_div p {
+        margin-right: 15%;
+        margin-left: 15%;
+        padding-top: 20px;
+        padding-bottom: 30px;
+      }
+      .limitless_option_parent_div button {
+        width: 200px;
+        height: 50px;
+        background-color: blueviolet;
+        border-style: solid;
+        border-color: transparent;
+        color: white;
+      }
+      /* limitless options ends here */
+      /* media queries */
+      @media (max-width: 834px) {
+        .section_div {
+          display: none;
+        }
+      }
+      @media (max-width: 480px) {
+        .hero_section_buttons_div {
+          flex-wrap: wrap;
+          display: flex;
+          flex-direction: column;
+        }
+        .hero_section_div h1 {
+          font-size: 50px;
+        }
+      }
+      @media (max-width: 768px) {
+        .SEO_section_parent_div {
+          flex-wrap: wrap;
+          gap: 40px;
+        }
+        .SEO_section_container1 {
+          width: 100%;
+        }
+        .SEO_section_container2 {
+          width: 100%;
+        }
+        .SEO_section_div {
+          height: auto;
+        }
+        .SEO_section_container2 h3 {
+          font-weight: lighter;
+          font-size: x-large;
+        }
+        .portfolio_section_parent_div {
+          flex-wrap: wrap;
+          gap: 40px;
+        }
+        .portfolio_section_container1 h3 {
+          font-weight: lighter;
+          font-size: x-large;
+        }
+        .portfolio_section_container1 {
+          width: 100%;
+        }
+        .portfolio_section_container2 {
+          width: 100%;
+        }
+        .portfolio_section_div {
+          height: auto;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar section starts here -->
+    <div class="section_div">
+      <div class="nav_bar_parent_div">
+        <h2 class="shapely_demo">Shapely Demo</h2>
+        <div class="nav_bar_buttons">
+          <h4>HOME</h4>
+          <h4>BLOG</h4>
+          <h4>PORTFOLIO</h4>
+          <h4>ABOUT THE TESTS</h4>
+          <h4>LEVEL1</h4>
+          <h4>SHOP</h4>
+        </div>
+        <div><i class="fa-solid fa-magnifying-glass" id="search_icon"></i></div>
+      </div>
+    </div>
+    <!-- nav bar section ends here -->
+    <!-- hero section starts here -->
+    <div class="hero_section_div">
+      <h1 class="hero_section_h1">We Change Everything WordPress</h1>
+      <p class="hero_section_p">
+        This Is The Only WordPress You'll Ever Want To Use
+      </p>
+      <div class="hero_section_buttons_div">
+        <button class="hero_section_read-more_button">READ MORE</button>
+        <button class="hero_section_download-now_button">DOWNLOAD NOW</button>
+      </div>
+    </div>
+    <!-- hero section ends here -->
+    <!-- SEO section starts here -->
+    <div class="SEO_section_div">
+      <div class="SEO_section_parent_div">
+        <div class="SEO_section_container1">
+          <img src="macbook-preview-flexible.png" />
+        </div>
+        <div class="SEO_section_container2">
+          <h3>SEO Friendly</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Dignissimos est autem magnam eligendi cupiditate perferendis esse,
+            molestiae nulla similique numquam asperiores odio ut sint officiis
+            obcaecati ab illum expedita assumenda.
+          </p>
+          <button>READ MORE</button>
+        </div>
+      </div>
+    </div>
+    <!-- SEO section ends here -->
+    <!-- portlio section starts here -->
+    <div class="portfolio_section_div">
+      <div class="portfolio_section_parent_div">
+        <div class="portfolio_section_container1">
+          <h3>Portfolio Section</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et
+            provident architecto, ut blanditiis, nostrum perferendis
+            exercitationem quam animi modi, fugiat placeat eos quia accusamus
+            aspernatur suscipit soluta ex odio magnam.
+          </p>
+          <button>SEE IT IN ACTION</button>
+        </div>
+        <div class="portfolio_section_container2">
+          <img src="flexible-portfolio.png" />
+        </div>
+      </div>
+    </div>
+    <!-- porfolio section ends here -->
+    <!-- small parallax section starts here -->
+    <div class="parallax_section_div">
+      <div class="parallax_section_parent_div">
+        <h3>Small Parallax Section</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
+          laboriosam ullam, vitae quam accusamus, recusandae eius maxime
+          deserunt cupiditate reiciendis officia aliquid hic quibusdam
+          repudiandae natus voluptatum distinctio expedita debitis.
+        </p>
+        <button>MORE INFO</button>
+      </div>
+    </div>
+    <!-- small parallax section ends here -->
+    <!-- limitless option starts here -->
+    <div class="limitless_option_section_div">
+      <div class="limitless_option_parent_div">
+        <h3>Limitless Options</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sit
+          illum quam et libero placeat suscipit eum quis, voluptatibus
+          laudantium aperiam ipsa fugit. Deleniti voluptatem officiis obcaecati
+          praesentium neque aut.
+        </p>
+        <button>DOWNLOAD NOW</button>
+        <div class="limitless_option_img_div"><img src="forest.jpg" /></div>
+      </div>
+    </div>
+    <!-- limitless options ends here -->
+  </body>
+</html>
